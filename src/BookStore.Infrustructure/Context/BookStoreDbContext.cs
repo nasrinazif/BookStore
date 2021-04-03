@@ -25,5 +25,6 @@ namespace BookStore.Infrustructure.Context
 
             base.OnModelCreating(modelBuilder);
         }
+
     }
 }
