@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BookStore.Domain.Models
 {
-    class Book : Entity
+    public class Book : Entity
     {
         public string Name { get; set; }
         public string Author { get; set; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BookStore.Domain.Models
 {
-    class Category : Entity
+    public class Category : Entity
     {
         public string Name { get; set; }
         /* EF Relations */
