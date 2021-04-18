@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BookStore.Domain.Interfaces
 {
-    interface ICategoryRepository: IRepository<Category>
+    public interface ICategoryRepository: IRepository<Category>
     {
     }
 }

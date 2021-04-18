@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain.Interfaces
 {
-    interface IBookService: IDisposable
+    public interface IBookService: IDisposable
     {
         Task<IEnumerable<Book>> GetAll();
         Task<Book> GetById(int id);

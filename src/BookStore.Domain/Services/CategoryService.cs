@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain.Services
 {
-    class CategoryService : ICategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
         private readonly IBookService _bookService;

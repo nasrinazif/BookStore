@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Domain.Interfaces
 {
-    interface IBookRepository: IRepository<Book>
+    public interface IBookRepository: IRepository<Book>
     {
         new Task<List<Book>> GetAll();
         new Task<Book> GetById(int id);
