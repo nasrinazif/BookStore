@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using BookStore.API.Configuration;
 
 namespace BookStoreAPI
 {
@@ -32,7 +34,13 @@ namespace BookStoreAPI
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddControllers();
+
+            services.ResolveDependencies();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStoreAPI", Version = "v1" });
