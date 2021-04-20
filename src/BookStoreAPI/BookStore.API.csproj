@@ -28,8 +28,4 @@
     <ProjectReference Include="..\BookStore.Infrustructure\BookStore.Infrustructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Dtos\Book\" />
-  </ItemGroup>
-
 </Project>
