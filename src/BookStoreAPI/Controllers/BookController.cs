@@ -85,5 +85,44 @@ namespace BookStore.API.Controllers
 
             return Ok(bookDto);
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            var book = await _bookService.GetById(id);
+            if (book == null) return NotFound();
+
+            await _bookService.Remove(book);
+
+            return Ok();
+        }
+
+        [Route("search/{bookName}")]
+        [HttpGet]
+        public async Task<ActionResult<List<Book>>> Search(string bookName)
+        {
+            var booksSearchResult = await _bookService.Search(bookName);
+
+            var books = _mapper.Map<List<Book>>(booksSearchResult);
+
+            if (books == null || books.Count == 0) return NotFound("None book was founded");
+
+            return Ok(books);
+        }
+
+        [Route("search-book-with-category/{searchedValue}")]
+        [HttpGet]
+        public async Task<ActionResult<List<Book>>> SearchBookWithCategory(string searchedValue)
+        {
+            var booksSearchResult = await _bookService.SearchBookWithCategory(searchedValue);
+
+            var books = _mapper.Map<List<Book>>(booksSearchResult);
+
+            if (!books.Any()) return NotFound("None book was founded");
+
+            var booksToReturn = _mapper.Map<IEnumerable<BookResultDto>>(books);
+
+            return Ok(booksToReturn);
+        }
     }
 }
