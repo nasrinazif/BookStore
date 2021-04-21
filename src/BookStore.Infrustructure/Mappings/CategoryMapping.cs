@@ -17,6 +17,9 @@ namespace BookStore.Infrustructure.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(150)");
 
+            builder.Property(c => c.Name)                
+                .HasColumnType("varchar(150)");
+
             // 1 : N => Category : Books
             builder.HasMany(c => c.Books)
                 .WithOne(b => b.Category)
