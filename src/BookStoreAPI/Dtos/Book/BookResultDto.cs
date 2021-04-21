@@ -13,6 +13,8 @@ namespace BookStore.API.Dtos.Book
 
         public string CategoryName { get; set; }
 
+        public string CategoryCatDescription { get; set; }
+
         public string Name { get; set; }
 
         public string Author { get; set; }

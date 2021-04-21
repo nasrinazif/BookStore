@@ -10,5 +10,7 @@ namespace BookStore.API.Dtos.Category
         public int Id { get; set; }
 
         public string Name { get; set; }
+
+        public string CatDescription { get; set; }
     }
 }
