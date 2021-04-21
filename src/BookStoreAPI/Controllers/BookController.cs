@@ -81,7 +81,9 @@ namespace BookStore.API.Controllers
 
             if (!ModelState.IsValid) return BadRequest();
 
-            await _bookService.Update(_mapper.Map<Book>(bookDto));
+            var book = _mapper.Map<Book>(bookDto);
+
+            await _bookService.Update(book);
 
             return Ok(bookDto);
         }
@@ -107,7 +109,9 @@ namespace BookStore.API.Controllers
 
             if (books == null || books.Count == 0) return NotFound("None book was founded");
 
-            return Ok(books);
+            var booksToReturn = _mapper.Map<IEnumerable<BookResultDto>>(books);
+
+            return Ok(booksToReturn);
         }
 
         [Route("search-book-with-category/{searchedValue}")]
