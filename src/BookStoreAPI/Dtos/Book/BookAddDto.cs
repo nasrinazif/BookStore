@@ -8,7 +8,7 @@ namespace BookStore.API.Dtos.Book
 {
     public class BookAddDto
     {
-        [Required(ErrorMessage = "The field {0} is required")]
+        //[Required(ErrorMessage = "The field {0} is required")]
         public int CategoryId { get; set; }
 
         [Required(ErrorMessage = "The field {0} is required")]

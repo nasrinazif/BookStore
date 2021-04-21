@@ -18,6 +18,10 @@ namespace BookStore.Infrustructure.Repositories
 
         public override async Task<List<Book>> GetAll()
         {
+            var q = from b in Db.Books
+                    join c in Db.Categories on b.CategoryId equals c.Id into cs
+                    from p in cs.DefaultIfEmpty()
+                    select new { b.Id, b.Name, b.Author, b.Description, b.Value, b.PublishDate,};
             return await Db.Books.AsNoTracking().Include(b => b.Category)
                 .OrderBy(b => b.Name)
                 .ToListAsync();

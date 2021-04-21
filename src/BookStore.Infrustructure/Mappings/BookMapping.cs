@@ -32,7 +32,7 @@ namespace BookStore.Infrustructure.Mappings
                 .IsRequired();
 
             builder.Property(b => b.CategoryId)
-                .IsRequired();
+                .IsRequired(false);
 
             builder.ToTable("Books");
         }

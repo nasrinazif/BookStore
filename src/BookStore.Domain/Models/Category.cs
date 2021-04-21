@@ -6,6 +6,10 @@ namespace BookStore.Domain.Models
 {
     public class Category : Entity
     {
+        public Category()
+        {
+            Books = new List<Book>();
+        }
         public string Name { get; set; }
 
         public string CatDescription { get; set; }
