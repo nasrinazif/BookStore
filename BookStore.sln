@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.API", "src\BookStoreAPI\BookStore.API.csproj", "{CA220E68-ACC4-414F-9C03-814F2120DED3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.API", "src\BookStoreAPI\BookStore.API.csproj", "{CA220E68-ACC4-414F-9C03-814F2120DED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Domain", "src\BookStore.Domain\BookStore.Domain.csproj", "{399B0E16-6232-4115-961A-28760C8BAB96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Domain", "src\BookStore.Domain\BookStore.Domain.csproj", "{399B0E16-6232-4115-961A-28760C8BAB96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Infrustructure", "src\BookStore.Infrustructure\BookStore.Infrustructure.csproj", "{2BF772C5-08B1-4833-AFBB-5C523219BBD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Infrustructure", "src\BookStore.Infrustructure\BookStore.Infrustructure.csproj", "{2BF772C5-08B1-4833-AFBB-5C523219BBD9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{713D9B43-DB81-435F-BFB4-5C2AEB4C05FD}"
 EndProject
