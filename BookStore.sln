@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore.Infrustructure", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{713D9B43-DB81-435F-BFB4-5C2AEB4C05FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.API.Tests", "tests\BookStore.API.Tests\BookStore.API.Tests.csproj", "{1421BF6B-B720-4A9C-9BAA-85C130CE3B18}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,16 +29,9 @@ Global
 		{2BF772C5-08B1-4833-AFBB-5C523219BBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF772C5-08B1-4833-AFBB-5C523219BBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF772C5-08B1-4833-AFBB-5C523219BBD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1421BF6B-B720-4A9C-9BAA-85C130CE3B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1421BF6B-B720-4A9C-9BAA-85C130CE3B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1421BF6B-B720-4A9C-9BAA-85C130CE3B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1421BF6B-B720-4A9C-9BAA-85C130CE3B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{1421BF6B-B720-4A9C-9BAA-85C130CE3B18} = {713D9B43-DB81-435F-BFB4-5C2AEB4C05FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2963C52C-3A4A-4B07-8D0E-C2286A7380F2}
